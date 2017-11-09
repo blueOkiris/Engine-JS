@@ -7,6 +7,9 @@ var initialDelay = 60;
 
 // The set up for the game loop
 function start_game() {
+	document.addEventListener('keydown', OnKeyDown);
+	document.addEventListener('keyup', OnKeyUp);
+	/* Set up the game loop */
 	var onEachFrame;
 	
 	// Try to run advanced game loop, but allow simplified for low-end devs
