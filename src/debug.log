@@ -11,3 +11,17 @@
 [1108/210150.663:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
 [1108/214107.986:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
 [1108/222542.922:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+[1108/223223.248:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+[1108/223223.325:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: open context failed"}
+[1108/223223.325:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR demuxer: could not open
+[1108/223243.473:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+[1108/223243.550:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: open context failed"}
+[1108/223243.551:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR demuxer: could not open
+[1108/223346.608:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+[1108/223346.684:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: open context failed"}
+[1108/223346.684:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR demuxer: could not open
+[1108/223924.218:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+[1108/224210.003:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+[1108/224210.081:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"FFmpegDemuxer: open context failed"}
+[1108/224210.081:ERROR:render_media_log.cc(30)] MediaEvent: PIPELINE_ERROR demuxer: could not open
+[1108/224351.171:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain

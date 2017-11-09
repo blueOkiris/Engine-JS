@@ -6,6 +6,9 @@ var x_speed = 0, y_speed = 0, move_speed = 4;
 var key = [false,false,false,false]; //  Up, down, left, right
 var up = 0, down = 1, left = 2, right = 3;
 
+// Play music in the background
+bg_music.play();
+
 // Updates whenever possible (to be fast)
 function Update() {
 	// Move with keypresses
