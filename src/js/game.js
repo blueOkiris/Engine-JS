@@ -9,6 +9,9 @@ var initialDelay = 60;
 function start_game() {
 	document.addEventListener('keydown', OnKeyDown);
 	document.addEventListener('keyup', OnKeyUp);
+	document.addEventListener('mousedown', OnMouseDown);
+	document.addEventListener('mouseup', OnMouseUp);
+	
 	/* Set up the game loop */
 	var onEachFrame;
 	
