@@ -77,6 +77,8 @@ function Render() {
 		break;
 	
 	case GameState.Game: // Actual test code
+		ctx.fillStyle = "#FFFFFF";
+		ctx.fillRect(0, 0, 800, 600);
 		derp_face.draw(x, y, 64, 64, animCounter);
 		bomb.draw(200 + 100 * Math.sin(animCounter/10), 10, 64, 128, animCounter/2);
 		break;
