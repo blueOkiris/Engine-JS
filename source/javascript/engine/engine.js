@@ -47,8 +47,10 @@ function gameLoop() {
 	var time = (new Date).getTime();
 	if(time < nextGameTick + maxTimeDifference) {
 		while(time > nextGameTick && loops < maxFrameSkip) {
-			Update();
-			soundPlayer.UpdateLoops();
+			if(imagesToLoad == 0) {
+				Update();
+				soundPlayer.UpdateLoops();
+			}
 	
 			nextGameTick += skipTicks;
 			loops ++;
@@ -57,7 +59,7 @@ function gameLoop() {
 		nextGameTick = time;
 	}
 
-	if(loops) {
+	if(loops && imagesToLoad == 0) {
 		Render();
 	}
 }
