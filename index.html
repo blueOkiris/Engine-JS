@@ -4,25 +4,35 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=9" >
 		<link rel="stylesheet" type="text/css" href="src/window.css">
 		
-		<script src="src/js/adj/global.js" type="text/Javascript"></script>
+		<script type="text/Javascript">
+			function getClosestResolution(width, supportedWidths) {
+				let current = resolutions[0];
 
-		<script src="src/js/adj/images.js" type="text/Javascript"></script>
-		<script src="src/js/adj/music.js" type="text/Javascript"></script>
-		
-		<script src="src/js/lib/sprite.js" type="text/Javascript"></script>
-		<script src="src/js/lib/characters.js" type="text/Javascript"></script>
-		<script src="src/js/lib/tiles.js" type="text/Javascript"></script>
-		<script src="src/js/lib/world.js" type="text/Javascript"></script>
-		<script src="src/js/lib/input.js" type="text/Javascript"></script>
+				for(let i = 0; i < supportedWidths.length; i++) {
+					if(Math.abs(width - supportedWidths[i]) < Math.abs(width - current))
+						current = supportedWidths[i];
+				}
 
-		<script src="src/js/game/gameobjs.js" type="text/Javascript"></script>
-		<script src="src/js/game/levels.js" type="text/Javascript"></script>
-		<script src="src/js/game/game.js" type="text/Javascript"></script>
-		<script src="src/js/game/draw.js" type="text/Javascript"></script>
+				return current;
+			}
+		</script>
 
-		<script src="src/js/engine/update.js" type="text/Javascript"></script>
-		<script src="src/js/engine/render.js" type="text/Javascript"></script>
-		<script src="src/js/engine/engine.js" type="text/Javascript"></script>
+		<!-- Libraries -->
+		<script type="text/Javascript" src="source/javascript/library/music.js"></script>
+		<script type="text/Javascript" src="source/javascript/library/input.js"></script>
+		<script type="text/Javascript" src="source/javascript/library/sprite.js"></script>
+		<script type="text/Javascript" src="source/javascript/library/objects.js"></script>
+		<script type="text/Javascript" src="source/javascript/library/room.js"></script>
+
+		<!-- Environment variables and resources -->
+		<script type="text/Javascript" src="source/javascript/environment/global.js"></script>
+		<script type="text/Javascript" src="source/javascript/environment/resources.js"></script>
+		<script type="text/Javascript" src="source/javascript/environment/levels.js"></script>
+
+		<!-- Engine Code -->
+		<script type="text/Javascript" src="source/javascript/engine/update.js"></script>
+		<script type="text/Javascript" src="source/javascript/engine/render.js"></script>
+		<script type="text/Javascript" src="source/javascript/engine/engine.js"></script>
 	</head>
 	<body bgcolor="#053630">
 		<!-- <h1> <font color="#FFFFFF";"> SUPER-CHUNKS </font></h1> -->
