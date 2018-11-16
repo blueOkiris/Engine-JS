@@ -22,17 +22,21 @@ class Input {
 document.addEventListener('keydown', 
     function(event) {
         let input = inputControl.InputList.find((inp) => inp.Key == event.Key);
-        input.IsPressed = true;
+
+        if(input != undefined)
+            input.IsPressed = true;
     }
 );
 document.addEventListener('keyup', 
     function(event) {
         let input = inputControl.InputList.find((inp) => inp.Key == event.Key);
-        input.IsPressed = false;
+
+        if(input != undefined)
+            input.IsPressed = false;
     }
 );
 
-class MouseControl {
+/*class MouseControl {
     constructor() {
         this.X = 0;
         this.Y = 0;
@@ -55,4 +59,4 @@ document.addEventListener('mouseup',
         mouseControl.X = e.clientX;
         mouseControl.Y = e.clientY;
     }   
-);
+);*/

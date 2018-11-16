@@ -6,7 +6,7 @@ class SpriteController {
 	}
 
 	Draw(name, x, y, index) {
-		let spr = SpriteList.find((spr) => spr.Name = name);
+		let spr = this.SpriteList.find((spr) => spr.Name = name);
 		spr.Draw(x, y, index);
 	}
 }
@@ -17,8 +17,7 @@ class Sprite {
 				width, height,
 				mask_x, mask_y, mask_w, mask_h,
 				image_number,
-				row_number, col_number, row_spacing, col_spacing, row_offset, col_offset,
-				image_speed) {
+				row_number, col_number, row_spacing, col_spacing, row_offset, col_offset) {
 		imagesToLoad++;
 
 		this.Name = name;
@@ -37,9 +36,9 @@ class Sprite {
 			imagesToLoad--;
 		};
 
-		this.ImageSpeed = image_speed;
+		this.ImageNumber = image_number;
 		
-		this.Images = new Array(image_number);
+		this.Images = [];
 		for(let y = 0; y < row_number; y++) {
 			for(let x = 0; x < col_number; x++)
 				this.Images.push([col_offset + (x * col_spacing), row_offset + (y * row_spacing)]);
